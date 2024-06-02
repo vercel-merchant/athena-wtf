@@ -1,0 +1,160 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  border-radius: 50%; /* Add border-radius for circular shape */
+  overflow: hidden; /* Ensure the circular shape is maintained */
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+}
+
+.nav__item {
+  margin-right: 50px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav__link::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: orange;
+  transition: width 0.3s ease-in;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav__link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.nav__link:hover::before {
+  width: 100%;
+}
+
+.nav__link.active {
+  color: #ffffff;
+}
+
+.nav__humbger {
+  display: none;
+}
+
+.nav__bar {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin-bottom: 6px;
+}
+
+/* Home Section Styles */
+.section {
+  padding: 80px 0;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
+
+.data {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.logoCenter img {
+  height: 150px;
+  margin-bottom: 20px;
+  border-radius: 50%; /* Add border-radius for circular shape */
+  overflow: hidden; /* Ensure the circular shape is maintained */
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.btn__container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn.bluebg {
+  background-color: #007bff;
+  margin-right: 10px;
+}
+
+.btn.join {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.btn.join:hover {
+  background-color: #ff9100;
+}
+
+.btn.bluebg:hover {
+  background-color: #0056b3;
+}
+
+.btn:hover {
+  background-color: #ff8800;
+}
+
+body {
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* highlight color */
+
+::selection {
+  background-color: #ff9100;
+  color: #fff;
+}
